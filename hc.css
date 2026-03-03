@@ -1,0 +1,157 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5efe6;
+    font-family: 'Montserrat', sans-serif;
+    color: #2c2c2c;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.navbar a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.navbar a:hover {
+    color: #b89b5e;
+}
+
+/* HERO */
+
+.hero {
+    height: 85vh;
+    background-image: url("https://images.unsplash.com/photo-1551882547-ff40c63fe5fa");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+}
+
+/* SECTION */
+
+.rooms-wrapper {
+    padding: 100px 120px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+/* ROOM CARD */
+
+.room {
+    display: flex;
+    background: white;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.room:hover {
+    transform: translateY(-8px);
+}
+
+.room-img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.room-content {
+    width: 50%;
+    padding: 40px;
+}
+
+.room-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+
+input {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Buttons */
+
+button {
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2c2c2c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #b89b5e;
+}
+
+/* Locked */
+
+.room.locked {
+    border: 3px solid #b89b5e;
+    opacity: 0.9;
+}
+
+ol {
+    margin-top: 15px;
+}
